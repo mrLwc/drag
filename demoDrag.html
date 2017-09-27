@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>拖拽原理</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="drag.js">
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #div1 {
+            width: 40px;
+            height: 40px;
+            background: red;
+            position: absolute;
+        }
+    </style>
+    <script>
+        //当鼠标按下时浏览器有文字被选中就会触发浏览器的默认事件 ，，，，，，
+        //标准下可以用return false来解决这问题
+        // IE下
+
+        window.onload = function() {
+            var oDiv = document.getElementById('div1');
+            drag(oDiv);
+        }
+    </script>
+</head>
+
+<body style="height:2000px;">
+    qwwwwwww
+    <div id="div1">
+
+    </div>
+
+</body>
+
+</html>
